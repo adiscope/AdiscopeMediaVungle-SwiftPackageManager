@@ -1,0 +1,1 @@
+# AdiscopeMediaVungle-SwiftPackageManager
