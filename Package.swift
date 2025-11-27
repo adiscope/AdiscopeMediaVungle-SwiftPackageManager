@@ -13,8 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.1.0"),
-        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager.git", exact: "7.4.4"),
+        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager.git", exact: "7.5.2"),
     ],
     targets: [
         .target(
@@ -22,14 +21,13 @@ let package = Package(
             dependencies: [
                 .target(name: "AdiscopeMediaVungle"),
                 .product(name: "VungleAdsSDK", package: "VungleAdsSDK-SwiftPackageManager"),
-                .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
             ],
             path: "Sources"
         ),
         .binaryTarget(
             name: "AdiscopeMediaVungle",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.1/AdiscopeMediaVungle.zip",
-            checksum: "cfa9b1ed7c0658ac59fd52757e71b01eba766bd5be14ab678e50a43b41773512"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AdiscopeMediaVungle.zip",
+            checksum: "3e8f019c203167d1811df76255c91e0c02355dd18c314863e0a630dae97462af"
         ),
     ]
 )
